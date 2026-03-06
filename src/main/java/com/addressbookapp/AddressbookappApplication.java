@@ -15,22 +15,18 @@ public class AddressbookappApplication {
 
 // You can temporarily test(feature/uc-02-add-contact-console) it inside AddressBookApplication:
 //
-		Contact contact = new Contact(
-		        "Harshal",
-		        "Choudhary",
-		        "ABC Street",
-		        "Indore",
-		        "MP",
-		        "452001",
-		        "9999999999",
-		        "harshal@gmail.com"
-		);
-
-		System.out.println(contact);
+//		Contact contact = new Contact(
+//		        "Harshal",
+//		        "Choudhary",
+//		        "ABC Street",
+//		        "Indore",
+//		        "MP",
+//		        "452001",
+//		        "9999999999",
+//		        "harshal@gmail.com"
+//		);
+//
+//		System.out.println(contact);
 		
-		AddressBook ab = new AddressBook();
-		ab.findContactByFirstName("Harshal");
-		ab.editContactByFirstName("Harshal", "Sarode", "Khiroda pr yawal", "Jalgoan", "MH", "469583", "8458754040", "hsbbdk");
 	}
-
 }
