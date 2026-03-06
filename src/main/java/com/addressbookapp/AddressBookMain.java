@@ -11,6 +11,7 @@ import com.addressbookapp.model.Contacts;
 public class AddressBookMain {
     private static List<Contacts> contacts = new ArrayList<>();
     
+    // Add Contacts
     public static void add(String s) {
     	String[] arr = s.split(":");
     	if(arr.length!=8) {
@@ -20,6 +21,8 @@ public class AddressBookMain {
     			arr[1],arr[2],arr[3],arr[4],
     			Integer.parseInt(arr[5]), arr[6], arr[7]));
     }
+    
+    // Update Contacts
     public static void update(String name ,String s) {
     	String[] arr = s.split(":");
     	if(arr.length!=8) {
@@ -40,15 +43,17 @@ public class AddressBookMain {
     	}
     	System.out.println("User Not Found ");
     }
+    
+    
     public static void main(String[] args ) throws IOException{
       
-    	add("lucky:pal:berkhera:bhopal:MP:12345:83056144536:pallucky936@gmail.com");
-    	add("Himesh:kurmi:baisa:sagar:MP:462022:89564122121:himeshkurmi@gmail.com");
-    	add("nageshwar:patel:maiyar:katni:MP:11111:7845129654:nageshwar@gmail.com");
+    	add("Harshal:Choudhary:Burhanpur:Burhanpur:450331:9795289383:harsh2005@gmail.com");
+    	add("Ayush:Mishra:Katni:Katni:MP:464022:6858434244:ayushmishra3424@gmail.com");
+    	add("Devarshi:Mishra:Satna:Satna:MP:14531:7566343644:mishradevarshi39@gmail.com");
     	for(Contacts c : contacts) {
     		System.out.println(c.toString());
     	}
-    	update("himesh kurmi","Himesh:kurmi:Anand Nager:Bhopal:MP:462022:89564122121:himeshkurmi@gmail.com ");
+    	update("Ayush Mishra","Ayush:Mishra:Katni:Katni:MP:464022:6858434244:ayushmishra3424@gmail.com");
     	System.out.println("\n");
     	for(Contacts c : contacts) {
     		System.out.println(c.toString());
