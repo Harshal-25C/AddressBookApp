@@ -1,12 +1,35 @@
 [
   {
-    "firstName": "Chaitali",
+    "id": 0,
+    "firstName": "Anvii",
     "lastName": "Patil",
+    "address": "Panvel",
+    "city": "Navi-Mumbai",
+    "state": "MH",
+    "zip": "MH-1234",
+    "phoneNumber": "8478428448",
+    "email": "patilanwesha45@gmail.com"
+  },
+  {
+    "id": 0,
+    "firstName": "Neel",
+    "lastName": "Chavhan",
+    "address": "Panvel",
+    "city": "Navi-Mumbai",
+    "state": "MH",
+    "zip": "MH-1234",
+    "phoneNumber": "9478538434",
+    "email": "neelxxo@gmail.com"
+  },
+  {
+    "id": 0,
+    "firstName": "Harshal",
+    "lastName": "Sarode",
     "address": "Jalgoan",
     "city": "Jalgoan",
     "state": "MH",
-    "zip": "MH-43122",
-    "phoneNumber": "9383844383",
-    "email": "chpatil@gmail.com"
+    "zip": "MH-1234",
+    "phoneNumber": "8344846893",
+    "email": "httpsharsh45@gmail.com"
   }
 ]
