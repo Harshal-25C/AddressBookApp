@@ -1,13 +1,24 @@
 [
   {
     "id": 0,
-    "firstName": "Harshal",
-    "lastName": "Choudhary",
-    "address": "Ayodhya Nagar",
-    "city": "Bhopal",
-    "state": "MP",
-    "zip": "MP-1234",
-    "phoneNumber": "9357837384",
-    "email": "httpsharsh45@gmail.com"
+    "firstName": "Harry",
+    "lastName": "Potter",
+    "address": "Hogwarts",
+    "city": "Hogwarts",
+    "state": "Bihar",
+    "zip": "38573",
+    "phoneNumber": "3928529578",
+    "email": "potterharry@gmail.com"
+  },
+  {
+    "id": 0,
+    "firstName": "Sycho",
+    "lastName": "John",
+    "address": "London",
+    "city": "London",
+    "state": "MH",
+    "zip": "",
+    "phoneNumber": "9495795855",
+    "email": "johntheripper@gmail.com"
   }
 ]
