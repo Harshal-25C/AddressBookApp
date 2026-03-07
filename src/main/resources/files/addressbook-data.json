@@ -1,35 +1,24 @@
 [
   {
     "id": 0,
-    "firstName": "Anvii",
-    "lastName": "Patil",
-    "address": "Panvel",
-    "city": "Navi-Mumbai",
+    "firstName": "Shreya",
+    "lastName": "Bonde",
+    "address": "PCMC",
+    "city": "PCMC",
     "state": "MH",
     "zip": "MH-1234",
-    "phoneNumber": "8478428448",
-    "email": "patilanwesha45@gmail.com"
-  },
-  {
-    "id": 0,
-    "firstName": "Neel",
-    "lastName": "Chavhan",
-    "address": "Panvel",
-    "city": "Navi-Mumbai",
-    "state": "MH",
-    "zip": "MH-1234",
-    "phoneNumber": "9478538434",
-    "email": "neelxxo@gmail.com"
+    "phoneNumber": "9393494847",
+    "email": "bondeshreya45@gmail.com"
   },
   {
     "id": 0,
     "firstName": "Harshal",
-    "lastName": "Sarode",
-    "address": "Jalgoan",
-    "city": "Jalgoan",
+    "lastName": "Choudhary",
+    "address": "Ayodhya Nagar",
+    "city": "Bhopal",
     "state": "MH",
-    "zip": "MH-1234",
-    "phoneNumber": "8344846893",
+    "zip": "MP-1234",
+    "phoneNumber": "7438783434",
     "email": "httpsharsh45@gmail.com"
   }
 ]

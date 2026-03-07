@@ -4,17 +4,27 @@ import com.addressbookapp.model.Contact;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
-
 public class AddressBookDBServiceTest {
 
     @Test
-    public void givenDatabaseContacts_WhenRetrieved_ShouldReturnContactList() {
+    public void givenContactInDB_WhenRetrieved_ShouldReturnContactList() {
+        AddressBookDBService dbService = new AddressBookDBService();
+        Assertions.assertTrue(dbService.getAllContactsFromDB().size() > 0);
+    }
+
+    @Test
+    public void givenContact_WhenCityUpdated_ShouldSyncWithDatabase() {
         AddressBookDBService dbService = new AddressBookDBService();
 
-        List<Contact> contactList = dbService.getAllContactsFromDB();
+        Contact memoryContact = dbService.getContactByFirstName("Harshal");
+        Assertions.assertNotNull(memoryContact);
 
-        Assertions.assertNotNull(contactList);
-        Assertions.assertTrue(contactList.size() > 0);
+        boolean isUpdated = dbService.updateContactCityByName("Harshal", "Pune");
+        Assertions.assertTrue(isUpdated);
+
+        memoryContact.setCity("Pune");
+
+        boolean isSynced = dbService.isContactSyncedWithDB(memoryContact);
+        Assertions.assertTrue(isSynced);
     }
 }
