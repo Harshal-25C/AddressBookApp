@@ -1,2 +1,1 @@
-Harry Potter | Address: Hogwarts | City: Hogwarts | State: Bihar | Zip: 38573 | Phone: 3928529578 | Email: potterharry@gmail.com | dateAdded: N/A
-Sycho John | Address: London | City: London | State: MH | Zip:  | Phone: 9495795855 | Email: johntheripper@gmail.com | dateAdded: N/A
+Sycho John | Address: Marine Lines | City: Patna | State: MP | Zip: MP-1234 | Phone: 9478478473 | Email: httpsharsh45@gmail.com | dateAdded: N/A
