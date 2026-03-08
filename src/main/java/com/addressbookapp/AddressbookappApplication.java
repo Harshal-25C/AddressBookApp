@@ -10,6 +10,7 @@ public class AddressbookappApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(AddressbookappApplication.class, args);
+		System.out.println("Welcome to Address Book Application");
 
 // You can temporarily test(feature/uc-02-add-contact-console) it inside AddressBookApplication:
 //
