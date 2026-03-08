@@ -1,0 +1,24 @@
+[
+  {
+    "id": 0,
+    "firstName": "Harshal",
+    "lastName": "Choudhary",
+    "address": "",
+    "city": "pune",
+    "state": "Geornite",
+    "zip": "567834",
+    "phoneNumber": "",
+    "email": ""
+  },
+  {
+    "id": 0,
+    "firstName": "Rahul",
+    "lastName": "Verma",
+    "address": "",
+    "city": "Delhi",
+    "state": "DL",
+    "zip": "110001",
+    "phoneNumber": "",
+    "email": ""
+  }
+]
