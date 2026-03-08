@@ -349,6 +349,6 @@ After completing this project you will gain hands-on experience with:
 
 ## Author🧑‍💻
 
-**Harshal Choudhary**         
-Computer Science Engineering Student          
-Backend Developer (Java)
+[Harshal Choudhary](https://github.com/Harshal-25C) - Software Developer👨‍💻 | Cloud Enthusiast            
+B.Tech - `[Computer Science & Engineering]`         
+Java | Maven | OOPs | Spring Boot | Clean Architecture 
