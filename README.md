@@ -332,7 +332,7 @@ mvn test
 
 ---
 
-## Learning Outcomes
+## Learning Outcomes       
 
 After completing this project you will gain hands-on experience with:
 
@@ -349,6 +349,6 @@ After completing this project you will gain hands-on experience with:
 
 ## Author🧑‍💻
 
-**Harshal Choudhary**
-Computer Science Engineering Student
+**Harshal Choudhary**         
+Computer Science Engineering Student          
 Backend Developer (Java)
