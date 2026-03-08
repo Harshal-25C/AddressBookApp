@@ -1,0 +1,114 @@
+package com.addressbookapp.controller;
+
+
+import com.addressbookapp.model.AddressBook;
+import com.addressbookapp.model.Contact;
+import com.addressbookapp.service.AddressBookService;
+
+import java.util.*;
+
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/addressbooks")
+public class AddressBookController {
+
+    private final AddressBookService service;
+
+    public AddressBookController(AddressBookService service) {
+        this.service = service;
+    }
+
+    @PostMapping("/{name}/contacts")
+    public Contact addContact(
+            @PathVariable String name,
+            @RequestBody Contact contact) {
+
+        return service.addContact(name, contact);
+    }
+    
+    @PutMapping("/{bookName}/contacts")
+    public Contact updateContact(
+            @PathVariable String bookName,
+            @RequestParam String firstName,
+            @RequestParam String lastName,
+            @RequestBody Contact contact) {
+
+        return service.updateContact(bookName, firstName, lastName, contact);
+    }
+    
+    @DeleteMapping("/{bookName}/contacts")
+    public String deleteContact(
+            @PathVariable String bookName,
+            @RequestParam String firstName,
+            @RequestParam String lastName) {
+
+        boolean deleted = service.deleteContact(bookName, firstName, lastName);
+
+        if (deleted) {
+            return "Contact deleted successfully";
+        }
+
+        return "Contact not found";
+    }
+    
+    @GetMapping("/{bookName}/contacts")
+    public List<Contact> getContacts(@PathVariable String bookName) {
+
+        return service.getContacts(bookName);
+    }
+    
+    @PostMapping("/{name}")
+    public AddressBook createAddressBook(@PathVariable String name) {
+
+        return service.createAddressBook(name);
+    }
+    
+    @GetMapping
+    public Map<String, AddressBook> getAllAddressBooks() {
+
+        return service.getAllAddressBooks();
+    }
+    
+    @GetMapping("/search/city/{city}")
+    public List<Contact> searchByCity(@PathVariable String city) {
+
+        return service.searchByCity(city);
+    }
+    
+    @GetMapping("/search/state/{state}")
+    public List<Contact> searchByState(@PathVariable String state) {
+
+        return service.searchByState(state);
+    }
+    
+    @GetMapping("/view/city")
+    public Map<String, List<Contact>> viewByCity() {
+
+        return service.viewPersonsByCity();
+    }
+    
+    @GetMapping("/view/state")
+    public Map<String, List<Contact>> viewByState() {
+
+        return service.viewPersonsByState();
+    }
+    
+    @GetMapping("/count/city")
+    public Map<String, Long> countByCity() {
+
+        return service.countContactsByCity();
+    }
+    
+    @GetMapping("/count/state")
+    public Map<String, Long> countByState() {
+
+        return service.countContactsByState();
+    }
+    
+    @GetMapping("/{bookName}/sort/name")
+    public List<Contact> sortByName(@PathVariable String bookName) {
+
+        return service.sortContactsByName(bookName);
+    }
+}
